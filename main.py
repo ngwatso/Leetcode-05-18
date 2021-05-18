@@ -47,3 +47,31 @@ Iterate through command; if G, newStr += "G", if "(", check next index; if ")", 
 
 # ===============
 
+def makeArrayConsecutive2(statues):
+    
+    diff = max(statues) - min(statues)
+    
+    return (diff + 1) - len(statues)
+    
+
+'''
+
+U:
+
+[6, 2, 3, 8]
+output = 3
+
+[1, 3, 5, 7]
+output = 3
+
+[1, 4, 6, 9]
+output = 5
+
+P:
+
+Find largest integer in list, subtract len(statues)
+
+'''
+
+# ===============
+
