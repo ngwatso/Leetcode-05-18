@@ -75,3 +75,39 @@ Find largest integer in list, subtract len(statues)
 
 # ===============
 
+def shapeArea(n):
+    
+    num = 1
+    area = 1
+    
+    while num <= n:
+        area += 4 * (num - 1)
+        num += 1
+    
+    return area
+
+
+'''
+
+U:
+
+n = 2
+output = 5
+
+n = 3
+output = 13
+
+n = 4
+output = 25
+
+n = 5
+output = 41
+
+P: 
+
+output is equal to previous result + (n-1)*4;
+
+'''
+
+# ===============
+
